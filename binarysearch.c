@@ -70,7 +70,7 @@ int main() {
     }
     print(root);
     printf("\n");
-    printf("Find data at node:", T);
+    printf("Find data at node:");
     scanf("%d", &T);
     printf("node data %d", find_node_data(root, T)->data);
     return 0;
