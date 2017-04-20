@@ -1,2 +1,2 @@
-# linkedlist
-Simple linkedlist with inserts and lookups
+# Binary Tree
+Simple binary linkedlist with inserts and lookups
