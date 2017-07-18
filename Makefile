@@ -1,2 +1,2 @@
-BST:    main.c
-        gcc main.c
+BST:    bst.c
+        gcc bst.c
