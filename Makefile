@@ -1,2 +1,2 @@
 BST:    bst.c
-        gcc bst.c
+	gcc bst.c
