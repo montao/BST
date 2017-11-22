@@ -66,15 +66,15 @@ int main() {
     while (T-- > 0) {
         //printf("Input data. %d:", T);
         //scanf("%d %d", &data, &node_id);
-        int r = rand() % 100;
-        int r2 = rand() % 100;
-        root = insert_node(root, r, r2, "foobar");
+        int r = T;//rand() % 100;
+        int r2 = T* (rand() % 100);
+        root = insert_node(root, r2, r, "foobar");
     }
     print(root);
    // printf("\n");
    // printf("Find data at node:");
    // scanf("%d", &T);
-  //  T = 10;
-  //  printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
+    T = 10;
+    printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
     return 0;
 }
