@@ -3,6 +3,6 @@ script: make
 before_install:
   - pip install --user cpp-coveralls
 script:
-  - -/a.out
+  - ./a.out
 after_success:
   - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
