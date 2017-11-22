@@ -71,9 +71,9 @@ int main() {
         root = insert_node(root, r, r2, "Rosencrantz");
     }
     //print(root);
-    printf("\n");
-    printf("Find data at node:");
-    scanf("%d", &T);
-    printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
+   // printf("\n");
+   // printf("Find data at node:");
+   // scanf("%d", &T);
+   // printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
     return 0;
 }
