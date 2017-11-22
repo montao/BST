@@ -76,6 +76,8 @@ int main() {
    // scanf("%d", &T);
     T = r;
     printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
-    //printf("node data %d %s", find_node_data(NULL, T)->data, find_node_data(NULL, T)->name);
+    root = NULL;
+    find_node_data(root, T)->data;
+    
     return 0;
 }
