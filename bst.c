@@ -57,7 +57,7 @@ void print(node *np) {
 }
 
 int main() {
-    int T = 1000; //test case 1000 nodes
+    int T = 100; //test case 100 nodes
     int data, node_id;
     //printf("Input number of nodes:");
     //scanf("%d", &T);
@@ -66,15 +66,15 @@ int main() {
     while (T-- > 0) {
         //printf("Input data. %d:", T);
         //scanf("%d %d", &data, &node_id);
-        int r = rand() % 1000;
-        int r2 = rand() % 1000;
+        int r = rand() % 100;
+        int r2 = rand() % 100;
         root = insert_node(root, r, r2, "foobar");
     }
     print(root);
    // printf("\n");
    // printf("Find data at node:");
    // scanf("%d", &T);
-    T = 100;
+    T = 10;
     printf("node data %d %s", find_node_data(root, T)->data, find_node_data(root, T)->name);
     return 0;
 }
