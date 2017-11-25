@@ -57,7 +57,7 @@ void print(node *np) {
 }
 
 int main() {
-    int T = 100000000; //test case 1000 nodes
+    int T = 1000000000; //test case 1000000000 nodes
     int data, node_id;
     //printf("Input number of nodes:");
     //scanf("%d", &T);
@@ -66,9 +66,9 @@ int main() {
     while (T-- > 0) {
         //printf("Input data. %d:", T);
         //scanf("%d %d", &data, &node_id);
-        int r = rand() % 100000000;
-        int r2 = rand() % 100000000;
-        root = insert_node(root, r, r2, "Rosencrantz");
+        int r = rand() % 1000000000;
+        int r2 = rand() % 1000000000;
+        root = insert_node(root, r, r2, "Foo data Bar data");
     }
     //print(root);
     printf("\n");
