@@ -10,7 +10,6 @@ typedef struct node {
     struct node *right;
 } node;
 
-
 node *newNode(int data, char *name, int node_id) {
     node *new_node = malloc(sizeof(node));
     new_node->data = data;
@@ -35,7 +34,6 @@ node *insert_node(node *root, int data, int node_id, char *name) {
     }
     return root;
 }
-
 
 node *find_node_data(node *root, int node_id) {
     if (root == NULL)
@@ -76,6 +74,7 @@ int main() {
    // printf("\n");
    // printf("Find data at node:");
    // scanf("%d", &T);
+    print(find_node_data(NULL, node_id));
     T = r;
     printf("node data %d %s", find_node_data(root, r)->data, find_node_data(root, r)->name);
     root = NULL;
