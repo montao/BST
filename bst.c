@@ -62,23 +62,23 @@ int main() {
     node *root = NULL;
     srand(time(NULL));
     while (T-- > 0) {
-        
+
         //scanf("%d %d", &data, &node_id);
-        r = (2+T) * rand() % 100; //node id
-        r2 = (2+T)* (rand() % 100); // data
+        r = (2 + T) * rand() % 100; //node id
+        r2 = (2 + T) * (rand() % 100); // data
         printf("Input data. %d:\n", r2);
         printf("node id. %d:\n", r);
-      root = insert_node(root, r2, r, "foobar");
+        root = insert_node(root, r2, r, "foobar");
     }
     print(root);
-   // printf("\n");
-   // printf("Find data at node:");
-   // scanf("%d", &T);
+    // printf("\n");
+    // printf("Find data at node:");
+    // scanf("%d", &T);
     print(find_node_data(NULL, node_id));
     T = r;
     printf("node data %d %s", find_node_data(root, r)->data, find_node_data(root, r)->name);
     root = NULL;
-   // find_node_data(root, T)->data;
+    // find_node_data(root, T)->data;
     print(root);
     return 0;
 }
