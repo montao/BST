@@ -56,7 +56,8 @@ void print(node *np) {
 
 int main() {
     int T = 1000; //test case 1000 nodes
-    int data, node_id, r2, r;
+    int data, r2, r;
+    int node_id = 0;
     //printf("Input number of nodes:");
     //scanf("%d", &T);
     node *root = NULL;
